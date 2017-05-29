@@ -62,7 +62,7 @@ const builds = [
   },
   {
     entry: path.join(process.cwd(), 'src/index.js'),
-    dest: path.join(process.cwd(), `dist/${pkg.name}.esm.js`),
+    dest: path.join(process.cwd(), `dist/${pkg.name}.es.js`),
     format: 'es',
   },
 ];
