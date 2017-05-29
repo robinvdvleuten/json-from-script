@@ -10,11 +10,11 @@ const unescapes = {
 const unescape = input =>
   input.replace(/&(?:amp|lt|gt|quot|#39);/g, m => unescapes[m] || m);
 
-export default function jsonFromScript(
+export default (
   className: string,
   attribute: string
-): { [attribute: string]: any } {
-  return Array.prototype.reduce.call(
+): { [attribute: string]: any } =>
+  Array.prototype.reduce.call(
     document.getElementsByClassName(className || 'data'),
     (data, element) => {
       data[
@@ -24,4 +24,3 @@ export default function jsonFromScript(
     },
     {}
   );
-}
