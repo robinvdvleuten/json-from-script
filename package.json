@@ -40,7 +40,6 @@
   "homepage": "https://github.com/robinvdvleuten/json-from-script#readme",
   "devDependencies": {
     "babel-jest": "^20.0.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.4.0",
     "babel-preset-flow": "^6.23.0",
     "flow-bin": "^0.46.0",
