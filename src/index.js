@@ -1,5 +1,14 @@
 // @flow
-import unescape from 'lodash.unescape';
+const unescapes = {
+  '&amp;': '&',
+  '&lt;': '<',
+  '&gt;': '>',
+  '&quot;': '"',
+  '&#39;': "'",
+};
+
+const unescape = input =>
+  input.replace(/&(?:amp|lt|gt|quot|#39);/g, m => unescapes[m] || m);
 
 export default function jsonFromScript(
   className: string = 'data',
