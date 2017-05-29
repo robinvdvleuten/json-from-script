@@ -9,7 +9,7 @@ const uglify = require('uglify-js');
 // prettier-ignore
 const banner =
   '/*!\n' +
-  ' * observable-fetch.js v' + pkg.version + '\n' +
+  ' * json-from-script.js v' + pkg.version + '\n' +
   ' * (c) ' + new Date().getFullYear() + ' Robin van der Vleuten <robin@webstronauts.co>\n' +
   ' * Released under the MIT License.\n' +
   ' */'
