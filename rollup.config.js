@@ -17,7 +17,7 @@ module.exports = {
   dest: pkg.main,
   banner,
   useStrict: false,
-  format: 'iife',
+  format: 'umd',
   plugins: [
     babel({
       presets: [['env', { modules: false }], 'flow'],

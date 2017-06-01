@@ -5,8 +5,6 @@
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co>",
   "main": "dist/json-from-script.js",
-  "module": "src/json-from-script.js",
-  "jsnext:main": "src/json-from-script.js",
   "keywords": [
     "json",
     "script",
