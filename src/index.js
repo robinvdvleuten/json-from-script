@@ -1,15 +1,4 @@
 // @flow
-const unescapes = {
-  '&amp;': '&',
-  '&lt;': '<',
-  '&gt;': '>',
-  '&quot;': '"',
-  '&#39;': "'",
-};
-
-const unescape = input =>
-  input.replace(/&(?:amp|lt|gt|quot|#39);/g, m => unescapes[m] || m);
-
 export default (
   className: string,
   attribute: string
@@ -19,7 +8,15 @@ export default (
     (data, element) => {
       data[
         element.getAttribute(`data-${attribute || 'attribute'}`)
-      ] = JSON.parse(unescape(element.textContent));
+      ] = JSON.parse(
+        element.textContent
+          .replace(/&amp;/g, '&')
+          .replace(/&quot;/g, '"')
+          .replace(/&#39;/g, "'")
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+      );
+
       return data;
     },
     {}
