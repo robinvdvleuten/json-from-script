@@ -5,6 +5,7 @@
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co>",
   "main": "dist/json-from-script.js",
+  "jsnext:main": "src/json-from-script.js",
   "keywords": [
     "json",
     "script",
@@ -19,7 +20,6 @@
     "build": "npm-run-all --silent transpile minify",
     "transpile": "rollup -c",
     "minify": "uglifyjs dist/json-from-script.js -c collapse_vars,evaluate,unsafe,loops=false,keep_fargs=false,pure_getters,unused,dead_code -m -o dist/json-from-script.min.js -p relative",
-    "flow": "flow",
     "test": "jest --env=jsdom",
     "format": "prettier --single-quote --trailing-comma es5 --write '{src,test,build}/**/*.js'",
     "precommit": "lint-staged --verbose",
@@ -42,8 +42,6 @@
   "devDependencies": {
     "babel-jest": "^20.0.1",
     "babel-preset-env": "^1.4.0",
-    "babel-preset-flow": "^6.23.0",
-    "flow-bin": "^0.46.0",
     "husky": "^0.13.3",
     "jest": "^20.0.1",
     "lint-staged": "^3.4.1",

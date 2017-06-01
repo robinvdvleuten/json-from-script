@@ -20,7 +20,7 @@ module.exports = {
   format: 'umd',
   plugins: [
     babel({
-      presets: [['env', { modules: false }], 'flow'],
+      presets: [['env', { modules: false }]],
       exclude: 'node_modules/**',
       babelrc: false,
     }),

@@ -1,8 +1,4 @@
-// @flow
-export default (
-  className: string,
-  attribute: string
-): { [attribute: string]: any } =>
+export default (className, attribute) =>
   Array.prototype.reduce.call(
     document.getElementsByClassName(className || 'data'),
     (data, element) => {
