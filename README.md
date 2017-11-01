@@ -19,6 +19,8 @@ $ npm i json-from-script --save
 
 ## Usage
 
+[**Real Example on JSFiddle**](https://jsfiddle.net/robinvdvleuten/9jk7L3vx/) ➡️
+
 When your HTML contains any script tag like this;
 
 ```html
