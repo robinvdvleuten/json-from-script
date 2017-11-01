@@ -1,28 +1,7 @@
-const babel = require('rollup-plugin-babel');
-const rollup = require('rollup');
+import buble from 'rollup-plugin-buble';
 
-const pkg = require('./package.json');
-
-// prettier-ignore
-const banner =
-  '/*!\n' +
-  ' * json-from-script.js v' + pkg.version + '\n' +
-  ' * (c) ' + new Date().getFullYear() + ' Robin van der Vleuten <robin@webstronauts.co>\n' +
-  ' * Released under the MIT License.\n' +
-  ' */'
-
-module.exports = {
+export default {
   entry: 'src/index.js',
-  moduleName: 'jsonFromScript',
-  dest: pkg.main,
-  banner,
   useStrict: false,
-  format: 'umd',
-  plugins: [
-    babel({
-      presets: [['env', { modules: false }]],
-      exclude: 'node_modules/**',
-      babelrc: false,
-    }),
-  ],
+  plugins: [buble()],
 };
