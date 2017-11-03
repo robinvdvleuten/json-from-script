@@ -1,6 +1,6 @@
 {
   "name": "json-from-script",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Tiny JSON parser for your CSP aware script tags",
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co>",
