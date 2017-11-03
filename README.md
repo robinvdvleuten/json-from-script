@@ -8,13 +8,11 @@ Tiny _220b_ JSON parser for your [Content Security Policy](https://developers.go
 ## Installation
 
 ```
-$ yarn add json-from-script
-```
-
-Alternatively using npm:
-
-```
 $ npm i json-from-script --save
+
+or
+
+$ yarn add json-from-script
 ```
 
 ## Usage
