@@ -24,7 +24,9 @@
     "format": "prettier --single-quote --trailing-comma es5 --write '{src,test}/**/*.js'",
     "precommit": "lint-staged --verbose",
     "prepublish": "yarn build",
-    "test": "jest --env=jsdom"
+    "test": "npm-run-all test:**",
+    "test:jest": "jest --env=jsdom",
+    "test:size": "bundlesize"
   },
   "lint-staged": {
     "*.js": [
@@ -32,6 +34,12 @@
       "git add"
     ]
   },
+  "bundlesize": [
+    {
+      "path": "./dist/*.js",
+      "threshold": "300b"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robinvdvleuten/json-from-script.git"
@@ -41,10 +49,12 @@
   },
   "homepage": "https://github.com/robinvdvleuten/json-from-script#readme",
   "devDependencies": {
+    "bundlesize": "^0.15.3",
     "husky": "^0.13.3",
     "jest": "^20.0.1",
     "jest-in-case": "^1.0.2",
     "lint-staged": "^3.4.1",
+    "npm-run-all": "^4.1.1",
     "prettier": "^1.3.1",
     "rollup": "^0.41.6",
     "uglify-js": "^3.0.3"
