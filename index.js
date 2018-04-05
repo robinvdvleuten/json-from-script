@@ -1,9 +1,9 @@
-module.exports = function(className, attr) {
+export default function jsonFromScript(className, attribute) {
   return Array.from(
     document.getElementsByClassName(className || 'data')
   ).reduce(function(data, element) {
     return (data[
-      element.getAttribute('data-' + (attr || 'attribute'))
+      element.getAttribute('data-' + (attribute || 'attribute'))
     ] = JSON.parse(
       element.textContent
         .replace(/&amp;/g, '&')
