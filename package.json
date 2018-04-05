@@ -8,6 +8,7 @@
   "module": "dist/json-from-script.es.js",
   "jsnext:main": "dist/json-from-script.es.js",
   "umd:main": "dist/json-from-script.umd.js",
+  "typings": "index.d.ts",
   "keywords": [
     "json",
     "script",
@@ -16,6 +17,7 @@
   ],
   "files": [
     "dist",
+    "index.d.ts",
     "index.js"
   ],
   "scripts": {
