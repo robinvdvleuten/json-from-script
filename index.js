@@ -1,6 +1,7 @@
 export default function jsonFromScript(className, attribute) {
   return Array.from(
-    document.getElementsByClassName(className || 'data')
+    // Only select <script> elements with the given class.
+    document.querySelectorAll('script.' + (className || 'data'))
   ).reduce(function(data, element) {
     return (data[
       element.getAttribute('data-' + (attribute || 'attribute'))

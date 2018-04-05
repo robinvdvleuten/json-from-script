@@ -19,5 +19,8 @@ cases(
       attribute: 'property',
       value: { foo: 'bar' },
     },
+    '<div class="data" data-attribute="foo">&quot;bar&quot;</div>': {
+      value: {},
+    },
   }
 );
