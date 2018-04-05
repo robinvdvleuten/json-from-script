@@ -1,5 +1,5 @@
-const cases = require('jest-in-case');
-const jsonFromScript = require('./index');
+import cases from 'jest-in-case';
+import jsonFromScript from './index';
 
 cases(
   'jsonFromScript',

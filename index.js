@@ -1,4 +1,4 @@
-module.exports = function(className, attr) {
+export default function(className, attr) {
   return Array.from(
     document.getElementsByClassName(className || 'data')
   ).reduce(function(data, element) {
