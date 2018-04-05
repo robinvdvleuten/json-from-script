@@ -1,6 +1,6 @@
 # json-from-script
 
-Tiny _222b_ JSON parser for your [Content Security Policy](https://developers.google.com/web/fundamentals/security/csp/) aware script tags.
+Tiny JSON parser for your [Content Security Policy](https://developers.google.com/web/fundamentals/security/csp/) aware script tags.
 
 [![NPM version](https://img.shields.io/npm/v/json-from-script.svg)](https://www.npmjs.com/package/json-from-script)
 [![Build Status](https://travis-ci.org/robinvdvleuten/json-from-script.svg?branch=master)](https://travis-ci.org/robinvdvleuten/json-from-script)
