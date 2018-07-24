@@ -4,6 +4,8 @@ Tiny JSON parser for your [Content Security Policy](https://developers.google.co
 
 [![NPM version](https://img.shields.io/npm/v/json-from-script.svg)](https://www.npmjs.com/package/json-from-script)
 [![Build Status](https://travis-ci.org/robinvdvleuten/json-from-script.svg?branch=master)](https://travis-ci.org/robinvdvleuten/json-from-script)
+[![Gzip size](https://cdn.jsdelivr.net/npm/json-from-script/dist/json-from-script.umd.js)](https://img.badgesize.io/https://cdn.jsdelivr.net/npm/json-from-script/dist/json-from-script.umd.js?compression=gzip)
+[![Install size](https://packagephobia.now.sh/badge?p=json-from-script)](https://packagephobia.now.sh/result?p=json-from-script)
 
 ## Installation
 
