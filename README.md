@@ -20,7 +20,7 @@ $ npm install --save json-from-script
 When your HTML contains any script tag like this;
 
 ```html
-<script type="application/json" class="data" data-attribute="foo">{&quot;bar&quot;:&quot;baz&quot;}</script>
+<script type="application/json" class="data" data-attr="foo">{&quot;bar&quot;:&quot;baz&quot;}</script>
 ```
 
 You can parse it in your Javascript application like this;
@@ -40,7 +40,7 @@ Creates a new instance of the parser with the given options. The following optio
 can alternatively be provided to configure the parser for your specific needs:
 
 - `className <String>`: The class name of the script tags to parse. (default: __data__)
-- `attribute <String>`: The data attribute to use when setting the attribute on the parsed object. (default: __attribute__)
+- `attribute <String>`: The data attribute to use when setting the attribute on the parsed object. (default: __attr__)
 
 ## License
 
