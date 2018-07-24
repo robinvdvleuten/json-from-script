@@ -4,7 +4,7 @@ export default function jsonFromScript(className, attribute) {
     document.querySelectorAll('script.' + (className || 'data'))
   ).reduce(function(data, element) {
     return (data[
-      element.getAttribute('data-' + (attribute || 'attribute'))
+      element.getAttribute('data-' + (attribute || 'attr'))
     ] = JSON.parse(
       element.textContent
         .replace(/&amp;/g, '&')
@@ -14,4 +14,4 @@ export default function jsonFromScript(className, attribute) {
         .replace(/&gt;/g, '>')
     )), data;
   }, {});
-};
+}
