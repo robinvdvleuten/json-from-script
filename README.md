@@ -10,11 +10,7 @@ Tiny JSON parser for your [Content Security Policy](https://developers.google.co
 ## Installation
 
 ```
-$ npm i json-from-script --save
-
-or
-
-$ yarn add json-from-script
+$ npm install --save json-from-script
 ```
 
 ## Usage
