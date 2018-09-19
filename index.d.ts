@@ -1,1 +1,1 @@
-export default function jsonFromScript(className?: string, attribute?: string, scope?: HTMLElement): { [key: string]: any }
+export default function jsonFromScript(selector?: string, attribute?: string, scope?: HTMLElement): { [key: string]: any }

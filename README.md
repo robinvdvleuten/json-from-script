@@ -34,13 +34,13 @@ const parsed = jsonFromScript();
 
 ## API
 
-### `jsonFromScript(className, attribute)`
+### `jsonFromScript(selector, attribute)`
 
 Creates a new instance of the parser with the given options. The following options
 can alternatively be provided to configure the parser for your specific needs:
 
-- `className <String>`: The class name of the script tags to parse. (default: __data__)
-- `attribute <String>`: The data attribute to use when setting the attribute on the parsed object. (default: __attr__)
+- `selector <String>`: The selector for the script tags to parse. (default: __script.data__)
+- `attribute <String>`: The data attribute to use when setting the attribute on the parsed object. (default: __data-attr__)
 
 ## License
 
