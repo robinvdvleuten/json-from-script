@@ -11,6 +11,9 @@ cases(
     '<script type="application/json" class="data" data-attr="foo">{&quot;bar&quot;:&quot;baz&quot;}</script>': {
       value: { foo: { bar: 'baz' } },
     },
+    '<script type="application/json" class="data" data-attr="foo">{&#34;bar&#34;:&#34;baz&#34;}</script>': {
+      value: { foo: { bar: 'baz' } },
+    },
     '<script type="application/json" class="foo" data-attr="bar">&quot;baz&quot;</script>': {
       selector: 'script.foo',
       value: { bar: 'baz' },

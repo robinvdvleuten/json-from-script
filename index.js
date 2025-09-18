@@ -12,6 +12,7 @@ export default function jsonFromScript(
         element.textContent
           .replace(/&amp;/g, '&')
           .replace(/&quot;/g, '"')
+          .replace(/&#34;/g, '"')
           .replace(/&#39;/g, "'")
           .replace(/&lt;/g, '<')
           .replace(/&gt;/g, '>')
