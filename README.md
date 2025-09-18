@@ -14,8 +14,6 @@ $ npm install --save json-from-script
 
 ## Usage
 
-[**Real Example on JSFiddle**](https://jsfiddle.net/robinvdvleuten/9jk7L3vx/) ➡️
-
 When your HTML contains any script tag like this;
 
 ```html
@@ -43,4 +41,4 @@ can alternatively be provided to configure the parser for your specific needs:
 
 ## License
 
-MIT © [Robin van der Vleuten](https://www.robinvdvleuten.nl)
+MIT © [Robin van der Vleuten](https://robinvdvleuten.nl)
