@@ -1,3 +1,9 @@
+/**
+ * @param {string} [selector='script.data']
+ * @param {string} [attribute='data-attr']
+ * @param {string} [scope=document]
+ * @returns {Object.<string, any>}
+ */
 export default function jsonFromScript(
   selector = 'script.data',
   attribute = 'data-attr',
