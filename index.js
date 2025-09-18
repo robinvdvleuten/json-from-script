@@ -1,7 +1,9 @@
+// @ts-check
+
 /**
  * @param {string} [selector='script.data']
  * @param {string} [attribute='data-attr']
- * @param {string} [scope=document]
+ * @param {Document} [scope=document]
  * @returns {Object.<string, unknown>}
  */
 export default function jsonFromScript(
