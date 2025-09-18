@@ -27,7 +27,6 @@
   "scripts": {
     "build": "microbundle",
     "prepublish": "npm run build",
-    "release": "standard-version",
     "test": "uvu test"
   },
   "ava": {
@@ -46,7 +45,6 @@
   "devDependencies": {
     "jsdom": "^27.0.0",
     "microbundle": "^0.15.0",
-    "standard-version": "^9.0.0",
     "uvu": "^0.5.6"
   }
 }
