@@ -2,7 +2,7 @@
  * @param {string} [selector='script.data']
  * @param {string} [attribute='data-attr']
  * @param {string} [scope=document]
- * @returns {Object.<string, any>}
+ * @returns {Object.<string, unknown>}
  */
 export default function jsonFromScript(
   selector = 'script.data',
