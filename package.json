@@ -8,15 +8,15 @@
     "email": "robin@webstronauts.com",
     "url": "https://webstronauts.com"
   },
-  "type":"module",
-  "source": "index.js",
+  "type": "module",
+  "source": "src/index.js",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "unpkg": "dist/index.umd.js",
   "types": "./dist/index.d.ts",
-  "exports": { 
+  "exports": {
     "types": "./dist/index.d.ts",
-    "import": "./dist/index.js", 
+    "import": "./dist/index.js",
     "require": "./dist/index.cjs",
     "default": "./dist/index.js"
   },
@@ -28,17 +28,11 @@
     "build": "microbundle",
     "prepublish": "npm run build",
     "release": "standard-version",
-    "test": "jest --env=jsdom"
+    "test": "uvu test"
   },
-  "lint-staged": {
-    "*.js": [
-      "prettier --single-quote --trailing-comma es5 --write",
-      "git add"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "env"
+  "ava": {
+    "require": [
+      "esm"
     ]
   },
   "repository": {
@@ -50,12 +44,9 @@
   },
   "homepage": "https://github.com/robinvdvleuten/json-from-script#readme",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-jest": "^23.4.0",
-    "babel-preset-env": "^1.6.1",
-    "jest": "^23.4.1",
-    "jest-in-case": "^1.0.2",
+    "jsdom": "^27.0.0",
     "microbundle": "^0.15.0",
-    "standard-version": "^9.0.0"
+    "standard-version": "^9.0.0",
+    "uvu": "^0.5.6"
   }
 }
