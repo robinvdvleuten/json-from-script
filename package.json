@@ -1,6 +1,6 @@
 {
   "name": "json-from-script",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Tiny JSON parser for your CSP aware script tags",
   "license": "MIT",
   "author": {
