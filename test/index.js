@@ -36,6 +36,11 @@ test('custom attribute', () => {
   assert.equal(jsonFromScript('script.data', 'data-prop'), { foo: 'bar' });
 });
 
+test('no attribute', () => {
+  document.body.innerHTML = '<script type="application/json" class="data">&quot;bar&quot;</script>';
+  assert.equal(jsonFromScript('script.data'), {});
+});
+
 test('no script tag', () => {
   document.body.innerHTML = '<div class="data" data-attr="foo">&quot;bar&quot;</div>';
   assert.equal(jsonFromScript('script.data'), {});
