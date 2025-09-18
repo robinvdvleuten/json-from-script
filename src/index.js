@@ -1,10 +1,12 @@
 // @ts-check
 
 /**
+ * @template {Object.<string, unknown>} T
+ * 
  * @param {string} [selector='script.data']
  * @param {string} [attribute='data-attr']
  * @param {Document} [scope=document]
- * @returns {Object.<string, unknown>}
+ * @returns {T}
  */
 export default function jsonFromScript(
   selector = 'script.data',
