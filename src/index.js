@@ -17,8 +17,10 @@ export default function jsonFromScript(
     // Only select <script> elements with the given class.
     scope.querySelectorAll(selector)
   ).reduce(function(data, element) {
+    var attr = element.getAttribute(attribute);
+    
     return (
-      (data[element.getAttribute(attribute)] = JSON.parse(
+      attr && (data[attr] = JSON.parse(
         element.textContent
           .replace(/&amp;/g, '&')
           .replace(/&quot;/g, '"')
