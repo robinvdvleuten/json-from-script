@@ -3,7 +3,7 @@
 Tiny JSON parser for your [Content Security Policy](https://developers.google.com/web/fundamentals/security/csp/) aware script tags.
 
 [![NPM version](https://img.shields.io/npm/v/json-from-script.svg)](https://www.npmjs.com/package/json-from-script)
-[![Build Status](https://travis-ci.org/robinvdvleuten/json-from-script.svg?branch=master)](https://travis-ci.org/robinvdvleuten/json-from-script)
+[![Build Status](https://github.com/robinvdvleuten/json-from-script/actions/workflows/ci.yml/badge.svg)](https://github.com/robinvdvleuten/json-from-script/actions/workflows/ci.yml)
 [![Gzip size](https://cdn.jsdelivr.net/npm/json-from-script/dist/json-from-script.umd.js)](https://img.badgesize.io/https://cdn.jsdelivr.net/npm/json-from-script/dist/json-from-script.umd.js?compression=gzip)
 [![Install size](https://packagephobia.now.sh/badge?p=json-from-script)](https://packagephobia.now.sh/result?p=json-from-script)
 
