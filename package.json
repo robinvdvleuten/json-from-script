@@ -3,11 +3,7 @@
   "version": "0.0.0-semantically-released",
   "description": "Tiny JSON parser for your CSP aware script tags",
   "license": "MIT",
-  "author": {
-    "name": "Robin van der Vleuten",
-    "email": "robin@webstronauts.com",
-    "url": "https://webstronauts.com"
-  },
+  "author": "Robin van der Vleuten <robin@webstronauts.com>",
   "type": "module",
   "source": "src/index.js",
   "main": "dist/index.cjs",
