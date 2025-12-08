@@ -3,7 +3,7 @@
 A tiny (276B) JSON parser for your CSP aware script tags.
 
 [![NPM version](https://img.shields.io/npm/v/json-from-script.svg)](https://www.npmjs.com/package/json-from-script)
-[![Build Status](https://github.com/robinvdvleuten/json-from-script/actions/workflows/ci.yml/badge.svg)](https://github.com/robinvdvleuten/json-from-script/actions/workflows/ci.yml)
+[![Build Status](https://github.com/robinvdvleuten/json-from-script/actions/workflows/build.yml/badge.svg)](https://github.com/robinvdvleuten/json-from-script/actions/workflows/build.yml)
 [![licenses](https://licenses.dev/b/npm/json-from-script)](https://licenses.dev/npm/json-from-script)
 
 Modern front-ends often need a tiny bit of server-rendered data to kick-start hydration or to configure a widget. The usual answer is an inline `<script>` that hydrates a global variable—but that approach triggers strict [Content Security Policies](https://developers.google.com/web/fundamentals/security/csp/), can’t be cached independently, and forces you to hand-roll parsing and error handling for every page. **json-from-script** smooths out that workflow by treating `<script type="application/json">` tags as a simple, declarative data transport that is safe under CSP.
