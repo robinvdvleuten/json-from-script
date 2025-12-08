@@ -2,6 +2,18 @@
 
 This page lists all releases/release notes for json-from-script back to v2.0.0. For releases prior to v2, please refer to the Github Releases Page.
 
+## [3.1.0](https://github.com/robinvdvleuten/json-from-script/compare/v3.0.0...v3.1.0) (2025-12-08)
+
+
+### Features
+
+* accept generic so return type can be altered ([998ac44](https://github.com/robinvdvleuten/json-from-script/commit/998ac44b64701c2ae9abc55386fc42a75a380bc4))
+
+
+### Bug Fixes
+
+* pass through object when attribute is not defined ([906dc1c](https://github.com/robinvdvleuten/json-from-script/commit/906dc1cc5888062d8d8bacc4b54275ed57730b47))
+
 ## [3.1.0](https://github.com/robinvdvleuten/json-from-script/compare/v3.0.0...v3.1.0) (2025-09-18)
 
 ### Features
