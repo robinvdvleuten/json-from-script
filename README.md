@@ -1,6 +1,6 @@
 # json-from-script
 
-A tiny (276B) JSON parser for your CSP aware script tags.
+A tiny (230B) JSON parser for your CSP aware script tags.
 
 [![NPM version](https://img.shields.io/npm/v/json-from-script.svg)](https://www.npmjs.com/package/json-from-script)
 [![Build Status](https://github.com/robinvdvleuten/json-from-script/actions/workflows/build.yml/badge.svg)](https://github.com/robinvdvleuten/json-from-script/actions/workflows/build.yml)
