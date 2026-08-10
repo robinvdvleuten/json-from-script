@@ -37,7 +37,7 @@
   "devDependencies": {
     "@size-limit/file": "^12.1.0",
     "jsdom": "^30.0.0",
-    "size-limit": "^12.1.0",
+    "size-limit": "^13.0.3",
     "tsdown": "^0.22.12",
     "uvu": "^0.5.6"
   },
